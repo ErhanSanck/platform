@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <!-- ── SEO META TAGS ─────────────────────────────────────────────────── -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <title>Hakkımızda & Özel Ders Ücret Tarifeleri | DersPlatformu Bursa</title>
+    <meta name="description" content="DersPlatformu hakkında bilgi edinin. Bursa Nilüfer'de online ve yüz yüze özel ders ücret tarifelerimizi inceleyin. Ortaokul ve lise öğrencileri için güncel saatlik ücretler.">
+    <meta name="keywords" content="özel ders fiyatları, özel ders ücretleri, online özel ders fiyatı, yüz yüze özel ders fiyatı, Bursa özel ders fiyatı, ortaokul özel ders ücreti, lise özel ders ücreti, DersPlatformu hakkında">
+    <meta name="author" content="DersPlatformu">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="Turkish">
+    <meta name="revisit-after" content="7 days">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://www.dersplatformu.com/hakkimizda.html">
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.dersplatformu.com/hakkimizda.html">
+    <meta property="og:title" content="Hakkımızda & Özel Ders Ücret Tarifeleri | DersPlatformu">
+    <meta property="og:description" content="DersPlatformu hakkında bilgi edinin. Online ve yüz yüze özel ders ücret tarifelerimizi inceleyin.">
+    <meta property="og:image" content="https://www.dersplatformu.com/og-image.jpg">
+    <meta property="og:image:alt" content="DersPlatformu Hakkımızda Sayfası">
+    <meta property="og:locale" content="tr_TR">
+    <meta property="og:site_name" content="DersPlatformu">
+    
+    <!-- Twitter Card Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://www.dersplatformu.com/hakkimizda.html">
+    <meta name="twitter:title" content="Hakkımızda & Özel Ders Ücret Tarifeleri | DersPlatformu">
+    <meta name="twitter:description" content="Bursa Nilüfer'de online ve yüz yüze özel ders ücret tarifelerimizi inceleyin.">
+    <meta name="twitter:image" content="https://www.dersplatformu.com/og-image.jpg">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    
+    <!-- Preload kritik kaynaklar -->
+    <link rel="preload" href="style.css" as="style">
+    <link rel="preload" href="app.js" as="script">
+    
+    <!-- DNS Prefetch -->
+    <link rel="dns-prefetch" href="https://www.gstatic.com">
+    <link rel="dns-prefetch" href="https://www.googletagmanager.com">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    
+    <style>!-- Inline Critical CSS -->
+    <style>
+        /* ── Fiyat tabloları genel ── */
+        .price-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 14px;
+        }
+        .price-table thead th {
+            background: var(--primary-color);
+            color: #fff;
+            padding: 10px 14px;
+            text-align: left;
+            font-weight: 600;
+        }
+        .price-table thead th:first-child { border-radius: 8px 0 0 0; }
+        .price-table thead th:last-child  { border-radius: 0 8px 0 0; }
+        .price-table tbody tr:nth-child(even) { background: #f8faff; }
+        .price-table tbody tr:hover { background: #eff6ff; }
+        .price-table tbody td {
+            padding: 10px 14px;
+            border-bottom: 1px solid #e5e7eb;
+            color: var(--dark-color);
+        }
+        .price-table tbody td.price-cell {
+            font-weight: 700;
+            color: var(--primary-color);
+        }
+        .table-responsive {
+            overflow-x: auto;
+            border-radius: 8px;
+            box-shadow: 0 1px 6px rgba(0,0,0,0.08);
+            padding: 0 10px;
+        }
+
+        /* ── Grup başlığı (Ortaokul / Lise) ── */
+        .price-group {
+            margin-bottom: 36px;
+        }
+        .price-group-title {
+            font-size: 1.05rem;
+            font-weight: 700;
+            color: var(--dark-color);
+            margin-bottom: 14px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .price-group-title .badge {
+            font-size: 11px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.07em;
+            background: var(--primary-color);
+            color: #fff;
+            padding: 3px 10px;
+            border-radius: 20px;
+        }
+
+        /* ── İki tablo yan yana ── */
+        .tables-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+        }
+        .table-card {
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 1px 6px rgba(0,0,0,0.08);
+            overflow: hidden;
+        }
+        .table-card-header {
+            background: linear-gradient(135deg, #eff6ff, #dbeafe);
+            padding: 10px 14px;
+            font-size: 13px;
+            font-weight: 700;
+            color: var(--secondary-color);
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            border-bottom: 1px solid #dbeafe;
+        }
+
+        /* ── Mobil: tablolar alt alta ── */
+        @media (max-width: 640px) {
+            .tables-row { grid-template-columns: 1fr; }
+        }
+
+        /* ── Logo Handwriting ── */
+        .logo-handwriting {
+            font-family: 'Brush Script MT', 'Lucida Calligraphy', cursive;
+            font-size: 18px;
+            font-style: italic;
+            color: var(--accent-color);
+            font-weight: normal;
+        }
+
+        /* ── Accessibility ── */
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border-width: 0;
+        }
+
+        /* ── Focus Visible ── */
+        *:focus-visible {
+            outline: 2px solid var(--primary-color);
+            outline-offset: 2px;
+        }
+    </style>
+
+    <!-- Structured Data - Organization ──────────────────────────────────── -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "EducationalOrganization",
+      "name": "DersPlatformu",
+      "url": "https://www.dersplatformu.com",
+      "description": "Bursa Nilüfer'de online ve yüz yüze özel ders hizmeti veren eğitim kurumu.",
+      "logo": "https://www.dersplatformu.com/logo.png",
+      "image": "https://www.dersplatformu.com/og-image.jpg",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Fatih Sultan Mehmet Bulvarı, No:123",
+        "addressLocality": "Nilüfer",
+        "addressRegion": "Bursa",
+        "postalCode": "16000",
+        "addressCountry": "TR"
+      },
+      "telephone": "+902244523885",
+      "email": "info@dersplatformu.com",
+      "sameAs": [
+        "https://www.facebook.com/dersplatformu",
+        "https://www.instagram.com/dersplatformu",
+        "https://www.youtube.com/dersplatformu"
+      ],
+      "areaServed": {
+        "@type": "City",
+        "name": "Bursa"
+      },
+      "educationalLevel": [
+        "Ortaokul",
+        "Lise"
+      ]
+    }
+    </script>
+
+    <!-- Structured Data - Breadcrumb ────────────────────────────────────── -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Ana Sayfa",
+          "item": "https://www.dersplatformu.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Hakkımızda",
+          "item": "https://www.dersplatformu.com/hakkimizda.html"
+        }
+      ]
+    }
+    </script>
+
+    <!-- Structured Data - FAQSchema ─────────────────────────────────────── -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "DersPlatformu nedir?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "DersPlatformu, Bursa Nilüfer'de online ve yüz yüze özel ders hizmeti sunan bir eğitim kurumudur. 5. sınıftan 12. sınıfa kadar tüm öğrencilere destek veriyoruz."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Özel ders fiyatları nedir?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Özel ders fiyatları sınıf seviyesine ve ders türüne göre değişmektedir. Ortaokul online dersler 200 TL/saat, yüz yüze dersler 300 TL/saat başlayan fiyatlarla sunulmaktadır."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Online ve yüz yüze ders arasındaki fark nedir?",
+          "@type": "Answer",
+          "text": "Online dersler Türkiye'nin her yerinden erişilebilir ve daha ekonomiktir. Yüz yüze dersler Bursa Nilüfer'de yapılır ve daha kişisel bir deneyim sunar."
+        }
+      ]
+    }
+    </script>
+
+    <!-- Google Analytics (İsteğe bağlı) ────────────────────────────────── -->
+    <!-- 
+    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'GA_MEASUREMENT_ID');
+    </script>
+    -->
+</head>
+<body>
+
+    <!-- ── HEADER ────────────────────────────────────────────────────────── -->
+    <header class="main-header">
+        <nav class="navbar" aria-label="Ana navigasyon">
+            <div class="logo"><a href="index.html" aria-label="DersPlatformu Ana Sayfa">DersPlatformu <span class="logo-handwriting">en iyisinin en iyisi</span></a></div>
+            <button class="menu-toggle" id="menuToggle" aria-label="Menüyü aç/kapat" aria-expanded="false" aria-controls="navLinks">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-links" id="navLinks" role="menubar">
+                <li role="none"><a href="index.html" role="menuitem">Ana Sayfa</a></li>
+                <li role="none"><a href="hakkimizda.html" class="active" role="menuitem" aria-current="page">Hakkımızda</a></li>
+                <li role="none"><a href="iletisim.html" role="menuitem">İletişim</a></li>
+                <li role="none"><a href="ozel-dersler.html" role="menuitem">Özel Ders Al</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- ── BREADCRUMB ────────────────────────────────────────────────────── -->
+    <nav aria-label="Sayfa yolu" class="breadcrumb-nav">
+        <div class="breadcrumb-inner">
+            <div class="breadcrumb-page-title">Hakkımızda</div>
+            <ol class="breadcrumb">
+                <li><a href="index.html">🏠 Ana Sayfa</a></li>
+                <li aria-current="page">Hakkımızda</li>
+            </ol>
+        </div>
+    </nav>
+
+    <!-- ── MAIN CONTENT ──────────────────────────────────────────────────── -->
+    <main id="main-content">
+
+        <!-- ── ABOUT SECTION ────────────────────────────────────────────── -->
+        <section class="bg-light" style="margin-bottom: 30px; padding: 40px;" aria-labelledby="about-heading">
+            <h1 id="about-heading" style="color: var(--primary-color); margin-bottom: 20px;">Bursa'nın Öncü Eğitim Platformu: DersPlatformu</h1>
+            <p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 15px;">
+                DersPlatformu olarak, Bursa Nilüfer merkezli uzman kadromuzla öğrencilerin akademik başarılarını en üst seviyeye taşımayı hedefliyoruz. 
+                Yılların getirdiği eğitim tecrübesini, modern teknoloji ve kişiselleştirilmiş öğrenme modelleriyle birleştirerek 5. sınıftan 12. sınıfa kadar her öğrencimize özel bir yol haritası sunuyoruz.
+            </p>
+            <p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 15px;">
+                <strong>LGS ve YKS hazırlık</strong> süreçlerinde sadece ders anlatmıyor, aynı zamanda eğitim koçluğu desteğiyle öğrencilerimizin motivasyonlarını yüksek tutuyoruz. 
+                Bursa'da yüz yüze veya Türkiye'nin her yerinden online katılım sağlayabileceğiniz interaktif derslerimizle, başarıya giden yolda en güvenilir ortağınızız.
+            </p>
+            <p style="font-size: 1.1rem; line-height: 1.8;">
+                Vizyonumuz, her öğrencinin içindeki potansiyeli keşfetmesini sağlamak ve onları sadece sınavlara değil, geleceğe hazırlamaktür. 
+                DersPlatformu ile tanışın, farkı akademik başarılarınızda görün.
+            </p>
+        </section>
+
+        <!-- ── PRICES SECTION ───────────────────────────────────────────── -->
+        <section aria-labelledby="prices-heading">
+            <h2 id="prices-heading" style="margin-bottom: 6px;">Güncel Özel Ders Saatlik Ücret Tarifeleri</h2>
+            <p style="margin-bottom: 24px;">
+                Aşağıdaki tablolar yönetim panelimizden anlık olarak güncellenen baz saatlik ücretleri yansıtmaktadır. 
+                <a href="ozel-dersler.html">Özel ders paketi oluşturma aracımızı</a> kullanarak kendi programınıza ait toplam tutarı anında hesaplayabilirsiniz.
+            </p>
+
+            <!-- ── ORTAOKUL GRUBU ────────────────────────────────────── -->
+			  <div class="price-group">
+                <div class="price-group-title">
+                    🏫 İlkokul <span class="badge">1 ve 4. Sınıf</span>
+                </div>
+                <div class="tables-row">
+                    <!-- Çevrimiçi Ortaokul -->
+                    <div class="table-card">
+                        <div class="table-card-header">💻 Çevrimiçi</div>
+                        <div class="table-responsive">
+                            <table class="price-table" aria-label="Çevrimiçi ilkokul ücret tablosu">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Haftalık Ders Sayısı</th>
+                                        <th scope="col">Aylık Ders Saati</th>
+                                        <th scope="col">Aylık Fiyat</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="aboutOnlineilkokulTable"></tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <!-- Yüz Yüze Ortaokul -->
+                    <div class="table-card">
+                        <div class="table-card-header">🏫 Yüz Yüze</div>
+                        <div class="table-responsive">
+                            <table class="price-table" aria-label="Yüz yüze ilkokul ücret tablosu">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Haftalık Ders Sayısı</th>
+                                        <th scope="col">Aylık Ders Saati</th>
+                                        <th scope="col">Aylık Fiyat</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="aboutLiveilkokulTable"></tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="price-group">
+                <div class="price-group-title">
+                    🏫 Ortaokul <span class="badge">5. ve 8. Sınıf</span>
+                </div>
+                <div class="tables-row">
+                    <!-- Çevrimiçi Ortaokul -->
+                    <div class="table-card">
+                        <div class="table-card-header">💻 Çevrimiçi</div>
+                        <div class="table-responsive">
+                            <table class="price-table" aria-label="Çevrimiçi ortaokul ücret tablosu">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Haftalık Ders Sayısı</th>
+                                        <th scope="col">Aylık Ders Saati</th>
+                                        <th scope="col">Aylık Fiyat</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="aboutOnlineOrtaokulTable"></tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <!-- Yüz Yüze Ortaokul -->
+                    <div class="table-card">
+                        <div class="table-card-header">🏫 Yüz Yüze</div>
+                        <div class="table-responsive">
+                            <table class="price-table" aria-label="Yüz yüze ortaokul ücret tablosu">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Haftalık Ders Sayısı</th>
+                                        <th scope="col">Aylık Ders Saati</th>
+                                        <th scope="col">Aylık Fiyat</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="aboutLiveOrtaokulTable"></tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ── LİSE GRUBU ────────────────────────────────────────── -->
+            <div class="price-group">
+                <div class="price-group-title">
+                    🎓 Lise <span class="badge">9. – 12. Sınıf</span>
+                </div>
+                <div class="tables-row">
+                    <!-- Çevrimiçi Lise -->
+                    <div class="table-card">
+                        <div class="table-card-header">💻 Çevrimiçi</div>
+                        <div class="table-responsive">
+                            <table class="price-table" aria-label="Çevrimiçi lise ücret tablosu">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Haftalık Ders Sayısı</th>
+                                        <th scope="col">Aylık Ders Saati</th>
+                                        <th scope="col">Aylık Fiyat</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="aboutOnlineLiseTable"></tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <!-- Yüz Yüze Lise -->
+                    <div class="table-card">
+                        <div class="table-card-header">🎓 Yüz Yüze</div>
+                        <div class="table-responsive">
+                            <table class="price-table" aria-label="Yüz yüze lise ücret tablosu">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Haftalık Ders Sayısı</th>
+                                        <th scope="col">Aylık Ders Saati</th>
+                                        <th scope="col">Aylık Fiyat</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="aboutLiveLiseTable"></tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <p style="margin-top: 8px;">
+                <strong>Ücretler hakkında:</strong> Gösterilen fiyatlar baz saatlik ücretlerdir. Ders sayısı ve kişi kombinasyonuna göre detaylı fiyatlandırma için 
+                <a href="ozel-dersler.html">özel ders paketi oluşturma aracımızı</a> kullanın veya <a href="iletisim.html">bize ulaşın</a>.
+            </p>
+        </section>
+
+    </main>
+
+    <!-- ── FIREBASE SCRIPTS ──────────────────────────────────────────────── -->
+    <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-database-compat.js"></script>
+    <script src="app.js"></script>
+
+
+</body>
+</html>
+
+    <!-- Dinamik Fiyat Tablosu Doldurma -->
+    <script>
+    setTimeout(() => {
+      if (typeof firebase !== 'undefined' && firebase.database) {
+        const db = firebase.database();
+        db.ref('priceTable').on('value', (snapshot) => {
+          const data = snapshot.val() || {};
+          
+          const levels = ['ilkokul', 'ortaokul', 'lise'];
+          const types = [
+            { key: 'Online', id: 'Online' },
+            { key: 'Live', id: 'Live' }
+          ];
+          
+          levels.forEach(level => {
+            const rows = data[level] || [];
+            types.forEach(typeObj => {
+              const tableId = `about${typeObj.id}${level.charAt(0).toUpperCase() + level.slice(1)}Table`;
+              const tbody = document.getElementById(tableId);
+              if (tbody) {
+                tbody.innerHTML = '';
+                rows.forEach(row => {
+                  const tr = document.createElement('tr');
+                  const typeKey = typeObj.key === 'Online' ? 'online' : 'yuzyuze';
+                  const hourlyPrice = row[typeKey] || 0;
+                  const monthlyHours = row.hours * 4;
+                  const monthlyPrice = hourlyPrice * 4;
+                  
+                  tr.innerHTML = `
+                    <td>${row.hours} saat</td>
+                    <td>${monthlyHours} saat</td>
+                    <td class="price-cell">${monthlyPrice.toFixed(0)} TL</td>
+                  `;
+                  tbody.appendChild(tr);
+                });
+              }
+            });
+          });
+        });
+      }
+    }, 500);
+    </script>

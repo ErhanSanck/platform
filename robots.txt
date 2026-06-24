@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /yonetim-paneli.html
+
+Sitemap: https://www.dersplatformu.com/sitemap.xml

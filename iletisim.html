@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- PRIMARY SEO META TAGS -->
+    <title>İletişim & Kayıt Bilgileri | Bursa Nilüfer Özel Ders | DersPlatformu</title>
+    <meta name="description" content="Bursa Nilüfer'deki özel ders merkezimize ulaşın. 0224 452 38 85 numaralı telefondan bilgi alabilir veya FSM Bulvarı'ndaki ofisimizi ziyaret edebilirsiniz.">
+    <meta name="keywords" content="Bursa özel ders iletişim, Nilüfer özel ders telefon, DersPlatformu adres, özel ders kayıt Bursa, LGS YKS hazırlık iletişim">
+    <meta name="author" content="DersPlatformu">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.dersplatformu.com/iletisim.html">
+
+    <!-- OPEN GRAPH -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.dersplatformu.com/iletisim.html">
+    <meta property="og:title" content="İletişim | DersPlatformu Bursa Nilüfer">
+    <meta property="og:description" content="DersPlatformu'na ulaşın. Telefon: 0224 452 38 85. Nilüfer / Bursa.">
+    <meta property="og:image" content="https://www.dersplatformu.com/og-image.jpg">
+    <meta property="og:locale" content="tr_TR">
+    <meta property="og:site_name" content="DersPlatformu">
+
+    <!-- TWITTER CARD -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="İletişim | DersPlatformu">
+    <meta name="twitter:description" content="DersPlatformu'na ulaşın. Bursa Nilüfer'deki özel ders merkezimiz için iletişim bilgileri.">
+
+    <!-- STRUCTURED DATA: LocalBusiness + ContactPage -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "DersPlatformu",
+      "url": "https://www.dersplatformu.com",
+      "telephone": "+902244523885",
+      "email": "info@dersplatformu.com",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Fatih Sultan Mehmet Bulvarı, No:123",
+        "addressLocality": "Nilüfer",
+        "addressRegion": "Bursa",
+        "postalCode": "16110",
+        "addressCountry": "TR"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 40.2100,
+        "longitude": 28.9800
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+          "opens": "09:00",
+          "closes": "20:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Saturday",
+          "opens": "10:00",
+          "closes": "18:00"
+        }
+      ],
+      "hasMap": "https://maps.google.com/?q=Fatih+Sultan+Mehmet+Bulvari+Nilufer+Bursa"
+    }
+    </script>
+
+    <!-- STRUCTURED DATA: BreadcrumbList -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Ana Sayfa",
+          "item": "https://www.dersplatformu.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "İletişim",
+          "item": "https://www.dersplatformu.com/iletisim.html"
+        }
+      ]
+    }
+    </script>
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        /* ============================================================
+           İLETİŞİM SAYFASI — GÖRSEL ZENGİNLEŞTİRME
+           ============================================================ */
+
+        /* İki sütunlu kart düzeni */
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 12px;
+            margin-bottom: 16px;
+        }
+
+        /* Bilgi kartları */
+        .contact-card {
+            background: #ffffff;
+            border-radius: 10px;
+            padding: 14px 16px;
+            box-shadow: 0 1px 6px rgba(0,0,0,0.07);
+            border: 1px solid #e8edf5;
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+            transition: box-shadow 0.2s ease, transform 0.2s ease;
+        }
+
+        .contact-card:hover {
+            box-shadow: 0 4px 14px rgba(37, 99, 235, 0.11);
+            transform: translateY(-1px);
+        }
+
+        .contact-card-icon {
+            width: 34px;
+            height: 34px;
+            background: linear-gradient(135deg, #eff6ff, #dbeafe);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 17px;
+            margin-bottom: 6px;
+            flex-shrink: 0;
+        }
+
+        .contact-card-label {
+            font-size: 10px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: #6b7280;
+            margin-bottom: 1px;
+        }
+
+        .contact-card-value {
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: var(--dark-color);
+            line-height: 1.5;
+        }
+
+        .contact-card-value a {
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+
+        .contact-card-value a:hover {
+            text-decoration: underline;
+        }
+
+        /* Çalışma saatleri */
+        .hours-row {
+            display: flex;
+            justify-content: space-between;
+            padding: 4px 0;
+            border-bottom: 1px solid #f3f4f6;
+            font-size: 12px;
+        }
+
+        .hours-row:last-child { border-bottom: none; }
+
+        .hours-day { color: #4b5563; font-weight: 500; }
+
+        .hours-time {
+            font-weight: 600;
+            color: var(--primary-color);
+        }
+
+        .hours-closed {
+            font-weight: 600;
+            color: #9ca3af;
+        }
+
+        /* Harita kartı */
+        .maps-card {
+            background: #ffffff;
+            border-radius: 10px;
+            padding: 14px 16px;
+            box-shadow: 0 1px 6px rgba(0,0,0,0.07);
+            border: 1px solid #e8edf5;
+            margin-bottom: 16px;
+            position: relative;
+            overflow: hidden;
+        }
+        .maps-card::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
+        }
+
+        .maps-card h2 {
+            font-size: 0.95rem;
+            font-weight: 700;
+            color: var(--dark-color);
+            margin-bottom: 4px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .maps-card p {
+            font-size: 13px;
+            color: #6b7280;
+            margin-bottom: 10px;
+        }
+
+        .maps-link-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: linear-gradient(135deg, #2563eb, #1d4ed8);
+            color: #ffffff !important;
+            padding: 12px 22px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 14px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
+            transition: all 0.2s ease;
+        }
+
+        .maps-link-btn:hover {
+            background: linear-gradient(135deg, #1d4ed8, #1e3a8a);
+            box-shadow: 0 6px 18px rgba(37, 99, 235, 0.4);
+            transform: translateY(-1px);
+        }
+
+        /* Hızlı başvuru kartı */
+        .cta-card {
+            background: linear-gradient(135deg, #f0f9ff, #e0f2fe);
+            border: 1.5px solid #bae6fd;
+            border-radius: 10px;
+            padding: 14px 16px;
+            display: flex;
+            align-items: center;
+            gap: 14px;
+        }
+
+        .cta-card-icon {
+            font-size: 28px;
+            flex-shrink: 0;
+        }
+
+        .cta-card-text h2 {
+            font-size: 0.95rem;
+            font-weight: 700;
+            color: var(--dark-color);
+            margin-bottom: 2px;
+        }
+
+        .cta-card-text p {
+            font-size: 13px;
+            color: #374151;
+            margin-bottom: 10px;
+        }
+
+        .cta-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background: var(--primary-color);
+            color: #ffffff;
+            padding: 10px 20px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 14px;
+            transition: background 0.2s ease;
+        }
+
+        .cta-btn:hover { background: var(--secondary-color); }
+
+        /* Logo Handwriting */
+        .logo-handwriting {
+            font-family: 'Brush Script MT', 'Lucida Calligraphy', cursive;
+            font-size: 18px;
+            font-style: italic;
+            color: var(--accent-color);
+            font-weight: normal;
+        }
+
+        /* Mobil */
+        @media (max-width: 640px) {
+            .contact-hero { padding: 24px 18px; }
+            .contact-grid { grid-template-columns: 1fr; }
+            .cta-card { flex-direction: column; text-align: center; }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="main-header">
+        <nav class="navbar" aria-label="Ana navigasyon">
+            <div class="logo"><a href="index.html" aria-label="DersPlatformu Ana Sayfa">DersPlatformu <span class="logo-handwriting">en iyisinin en iyisi</span></a></div>
+            <button class="menu-toggle" id="menuToggle" aria-label="Menüyü aç/kapat" aria-expanded="false" aria-controls="navLinks">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-links" id="navLinks" role="menubar">
+                <li role="none"><a href="index.html" role="menuitem">Ana Sayfa</a></li>
+                <li role="none"><a href="hakkimizda.html" role="menuitem">Hakkımızda</a></li>
+                <li role="none"><a href="iletisim.html" class="active" role="menuitem" aria-current="page">İletişim</a></li>
+                <li role="none"><a href="ozel-dersler.html" role="menuitem">Özel Ders Al</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- BREADCRUMB + SAYFA BAŞLIĞI -->
+    <nav aria-label="Sayfa yolu" class="breadcrumb-nav">
+        <div class="breadcrumb-inner">
+            <h1 class="breadcrumb-page-title" id="contact-heading">Bizimle İletişime Geçin</h1>
+            <ol class="breadcrumb">
+                <li><a href="index.html">🏠 Ana Sayfa</a></li>
+                <li aria-current="page">İletişim</li>
+            </ol>
+        </div>
+    </nav>
+
+    <main id="main-content">
+
+        <!-- BİLGİ KARTLARI -->
+        <div class="contact-grid">
+
+            <!-- Telefon -->
+            <div class="contact-card">
+                <div class="contact-card-icon">📞</div>
+                <div class="contact-card-label">Telefon</div>
+                <div class="contact-card-value">
+                    <a href="tel:+902244523885" aria-label="DersPlatformu telefon numarası">0224 452 38 85</a>
+                </div>
+            </div>
+
+            <!-- Adres -->
+            <div class="contact-card">
+                <div class="contact-card-icon">📍</div>
+                <div class="contact-card-label">Adres</div>
+                <div class="contact-card-value" itemscope itemtype="https://schema.org/PostalAddress">
+                    <span itemprop="streetAddress">Fatih Sultan Mehmet Bulvarı, No:123</span><br>
+                    <span itemprop="addressLocality">Nilüfer</span> / <span itemprop="addressRegion">Bursa</span>
+                </div>
+            </div>
+
+            <!-- Çalışma Saatleri -->
+            <div class="contact-card">
+                <div class="contact-card-icon">🕐</div>
+                <div class="contact-card-label">Çalışma Saatleri</div>
+                <div style="margin-top: 4px;">
+                    <div class="hours-row">
+                        <span class="hours-day">Pazartesi – Cuma</span>
+                        <span class="hours-time">09:00 – 20:00</span>
+                    </div>
+                    <div class="hours-row">
+                        <span class="hours-day">Cumartesi</span>
+                        <span class="hours-time">10:00 – 18:00</span>
+                    </div>
+                    <div class="hours-row">
+                        <span class="hours-day">Pazar</span>
+                        <span class="hours-closed">Kapalı</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- E-posta -->
+            <div class="contact-card">
+                <div class="contact-card-icon">✉️</div>
+                <div class="contact-card-label">E-posta</div>
+                <div class="contact-card-value">
+                    <a href="mailto:info@dersplatformu.com" id="contactEmail">info@dersplatformu.com</a>
+                </div>
+            </div>
+
+            <!-- WhatsApp -->
+            <div class="contact-card">
+                <div class="contact-card-icon">💬</div>
+                <div class="contact-card-label">WhatsApp</div>
+                <div class="contact-card-value">
+                    <a href="https://wa.me/902244523885" id="contactWhatsapp" target="_blank" rel="noopener noreferrer">0224 452 38 85</a>
+                </div>
+            </div>
+
+            <!-- Instagram -->
+            <div class="contact-card">
+                <div class="contact-card-icon">📷</div>
+                <div class="contact-card-label">Instagram</div>
+                <div class="contact-card-value">
+                    <a href="https://instagram.com/dersplatformu" id="contactInstagram" target="_blank" rel="noopener noreferrer">@dersplatformu</a>
+                </div>
+            </div>
+
+        </div><!-- /contact-grid -->
+
+        <!-- HARİTA KARTI -->
+        <div class="maps-card">
+            <h2>🗺️ Ofisimizin Konumu — Nilüfer, Bursa</h2>
+            <p>Adresimizi Google Haritalar üzerinde görüntüleyerek yol tarifi almak için aşağıdaki butona tıklayabilirsiniz.</p>
+            <a href="https://maps.google.com/?q=Fatih+Sultan+Mehmet+Bulvari+Nilufer+Bursa"
+               id="mapsLink"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="maps-link-btn"
+               aria-label="Google Haritalar'da DersPlatformu konumunu göster">
+               📍 Google Haritalar'da Göster
+            </a>
+        </div>
+
+        <!-- HIZLI BAŞVURU -->
+        <div class="cta-card">
+            <div class="cta-card-icon">🚀</div>
+            <div class="cta-card-text">
+                <h2>Hemen Kayıt Yaptırın</h2>
+                <p>Özel ders paketi oluşturma aracımızla size özel programı dakikalar içinde oluşturun ve başvurunuzu tamamlayın.</p>
+                <a href="ozel-dersler.html" class="cta-btn">Paket Oluştur →</a>
+            </div>
+        </div>
+
+    </main>
+
+    <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-database-compat.js"></script>
+    <script src="app.js"></script>
+
+    <!-- Dinamik İletişim Bilgileri Doldurma -->
+    <script>
+    setTimeout(() => {
+      if (typeof firebase !== 'undefined' && firebase.database) {
+        const db = firebase.database();
+        db.ref('contact').on('value', (snapshot) => {
+          const data = snapshot.val() || {};
+          
+          // Telefon
+          const phoneEl = document.querySelector('a[href^="tel:"]');
+          if (phoneEl && data.phone) {
+            phoneEl.href = `tel:${data.phone}`;
+            phoneEl.textContent = data.phone;
+          }
+          
+          // Adres
+          const addressEls = document.querySelectorAll('[itemprop="streetAddress"], [itemprop="addressLocality"], [itemprop="addressRegion"]');
+          if (data.address && addressEls.length > 0) {
+            const addressParts = data.address.split('/');
+            if (addressParts[0]) addressEls[0].textContent = addressParts[0].trim();
+            if (addressParts[1]) addressEls[1].textContent = addressParts[1].trim();
+            if (addressParts[2]) addressEls[2].textContent = addressParts[2].trim();
+          }
+          
+          // E-posta
+          const emailEl = document.getElementById('contactEmail');
+          if (emailEl && data.email) {
+            emailEl.href = `mailto:${data.email}`;
+            emailEl.textContent = data.email;
+          }
+          
+          // WhatsApp
+          const whatsappEl = document.getElementById('contactWhatsapp');
+          if (whatsappEl && data.whatsapp) {
+            const cleanPhone = data.whatsapp.replace(/\D/g, '');
+            whatsappEl.href = `https://wa.me/${cleanPhone}`;
+            whatsappEl.textContent = data.whatsapp;
+          }
+          
+          // Instagram
+          const instagramEl = document.getElementById('contactInstagram');
+          if (instagramEl && data.instagram) {
+            const handle = data.instagram.startsWith('@') ? data.instagram.slice(1) : data.instagram;
+            instagramEl.href = `https://instagram.com/${handle}`;
+            instagramEl.textContent = data.instagram;
+          }
+          
+          // Harita linki
+          const mapsLink = document.getElementById('mapsLink');
+          if (mapsLink && data.address) {
+            const encodedAddress = encodeURIComponent(data.address);
+            mapsLink.href = `https://maps.google.com/?q=${encodedAddress}`;
+          }
+        });
+      }
+    }, 500);
+    </script>
+</body>
+</html>
