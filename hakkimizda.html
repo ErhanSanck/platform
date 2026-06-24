@@ -324,54 +324,131 @@
                 <a href="ozel-dersler.html">Özel ders paketi oluşturma aracımızı</a> kullanarak kendi programınıza ait toplam tutarı anında hesaplayabilirsiniz.
             </p>
 
+            <!-- ── İLKOKUL GRUBU ────────────────────────────────────── -->
+            <div class="price-group">
+                <div class="price-group-title">
+                    🏫 İlkokul <span class="badge">1 ve 4. Sınıf</span>
+                </div>
+                <div class="tables-row">
+                    <!-- Çevrimiçi İlkokul -->
+                    <div class="table-card">
+                        <div class="table-card-header">💻 Çevrimiçi</div>
+                        <div class="table-responsive">
+                            <table class="price-table" aria-label="Çevrimiçi ilkokul ücret tablosu">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Haftalık Ders Sayısı</th>
+                                        <th scope="col">Aylık Ders Saati</th>
+                                        <th scope="col">Aylık Fiyat</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="aboutOnlineilkokulTable"></tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <!-- Yüz Yüze İlkokul -->
+                    <div class="table-card">
+                        <div class="table-card-header">🏫 Yüz Yüze</div>
+                        <div class="table-responsive">
+                            <table class="price-table" aria-label="Yüz yüze ilkokul ücret tablosu">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Haftalık Ders Sayısı</th>
+                                        <th scope="col">Aylık Ders Saati</th>
+                                        <th scope="col">Aylık Fiyat</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="aboutLiveilkokulTable"></tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <!-- ── ORTAOKUL GRUBU ────────────────────────────────────── -->
-<div class="table-card">
-    <div class="table-card-header">Online İlkokul Tarifesi</div>
-    <table class="price-table">
-        <thead><tr><th>Haftalık Ders</th><th>Aylık Ders</th><th>Toplam Fiyat</th></tr></thead>
-        <tbody id="aboutOnlineIlkokulTable"></tbody>
-    </table>
-</div>
-<div class="table-card">
-    <div class="table-card-header">Yüz Yüze (Live) İlkokul Tarifesi</div>
-    <table class="price-table">
-        <thead><tr><th>Haftalık Ders</th><th>Aylık Ders</th><th>Toplam Fiyat</th></tr></thead>
-        <tbody id="aboutLiveIlkokulTable"></tbody>
-    </table>
-</div>
+            <div class="price-group">
+                <div class="price-group-title">
+                    🏫 Ortaokul <span class="badge">5. ve 8. Sınıf</span>
+                </div>
+                <div class="tables-row">
+                    <!-- Çevrimiçi Ortaokul -->
+                    <div class="table-card">
+                        <div class="table-card-header">💻 Çevrimiçi</div>
+                        <div class="table-responsive">
+                            <table class="price-table" aria-label="Çevrimiçi ortaokul ücret tablosu">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Haftalık Ders Sayısı</th>
+                                        <th scope="col">Aylık Ders Saati</th>
+                                        <th scope="col">Aylık Fiyat</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="aboutOnlineOrtaokulTable"></tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <!-- Yüz Yüze Ortaokul -->
+                    <div class="table-card">
+                        <div class="table-card-header">🏫 Yüz Yüze</div>
+                        <div class="table-responsive">
+                            <table class="price-table" aria-label="Yüz yüze ortaokul ücret tablosu">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Haftalık Ders Sayısı</th>
+                                        <th scope="col">Aylık Ders Saati</th>
+                                        <th scope="col">Aylık Fiyat</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="aboutLiveOrtaokulTable"></tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-<div class="table-card">
-    <div class="table-card-header">Online Ortaokul Tarifesi</div>
-    <table class="price-table">
-        <thead><tr><th>Haftalık Ders</th><th>Aylık Ders</th><th>Toplam Fiyat</th></tr></thead>
-        <tbody id="aboutOnlineOrtaokulTable"></tbody>
-    </table>
-</div>
-<div class="table-card">
-    <div class="table-card-header">Yüz Yüze (Live) Ortaokul Tarifesi</div>
-    <table class="price-table">
-        <thead><tr><th>Haftalık Ders</th><th>Aylık Ders</th><th>Toplam Fiyat</th></tr></thead>
-        <tbody id="aboutLiveOrtaokulTable"></tbody>
-    </table>
-</div>
+            <!-- ── LİSE GRUBU ────────────────────────────────────────── -->
+            <div class="price-group">
+                <div class="price-group-title">
+                    🎓 Lise <span class="badge">9. – 12. Sınıf</span>
+                </div>
+                <div class="tables-row">
+                    <!-- Çevrimiçi Lise -->
+                    <div class="table-card">
+                        <div class="table-card-header">💻 Çevrimiçi</div>
+                        <div class="table-responsive">
+                            <table class="price-table" aria-label="Çevrimiçi lise ücret tablosu">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Haftalık Ders Sayısı</th>
+                                        <th scope="col">Aylık Ders Saati</th>
+                                        <th scope="col">Aylık Fiyat</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="aboutOnlineLiseTable"></tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <!-- Yüz Yüze Lise -->
+                    <div class="table-card">
+                        <div class="table-card-header">🎓 Yüz Yüze</div>
+                        <div class="table-responsive">
+                            <table class="price-table" aria-label="Yüz yüze lise ücret tablosu">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Haftalık Ders Sayısı</th>
+                                        <th scope="col">Aylık Ders Saati</th>
+                                        <th scope="col">Aylık Fiyat</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="aboutLiveLiseTable"></tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-<div class="table-card">
-    <div class="table-card-header">Online Lise Tarifesi</div>
-    <table class="price-table">
-        <thead><tr><th>Haftalık Ders</th><th>Aylık Ders</th><th>Toplam Fiyat</th></tr></thead>
-        <tbody id="aboutOnlineLiseTable"></tbody>
-    </table>
-</div>
-<div class="table-card">
-    <div class="table-card-header">Yüz Yüze (Live) Lise Tarifesi</div>
-    <table class="price-table">
-        <thead><tr><th>Haftalık Ders</th><th>Aylık Ders</th><th>Toplam Fiyat</th></tr></thead>
-        <tbody id="aboutLiveLiseTable"></tbody>
-    </table>
-</div>
             <p style="margin-top: 8px;">
-                <strong>Ücretler hakkında:</strong> Gösterilen fiyatlar baz saatlik ücretlerdir. Ders sayısı ve kişi kombinasyonuna göre detaylı fiyatlandırma için 
-                <a href="ozel-dersler.html">özel ders paketi oluşturma aracımızı</a> kullanın veya <a href="iletisim.html">bize ulaşın</a>.
+                <strong>Ücretler hakkında:</strong> Gösterilen fiyatlar baz saatlik ücretlerdir. Ders sayısı ve kişi kombinasyonuna göre detaylı fiyatlandırma için <a href="ozel-dersler.html">özel ders paketi oluşturma aracımızı</a> kullanın veya <a href="iletisim.html">bize ulaşın</a>.
             </p>
         </section>
 
@@ -380,51 +457,61 @@
     <!-- ── FIREBASE SCRIPTS ──────────────────────────────────────────────── -->
     <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-app-compat.js"></script>
     <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-database-compat.js"></script>
-    <script src="app.js"></script>
-
-
-</body>
-</html>
 
     <!-- Dinamik Fiyat Tablosu Doldurma -->
     <script>
+    // Firebase konfigürasyonu
+    const firebaseConfig = {
+      apiKey: "AIzaSyApt0bbo_D1m6knPjr1eO5e-KmKidVCzD8",
+      authDomain: "flutter-6c452.firebaseapp.com",
+      databaseURL: "https://flutter-6c452-default-rtdb.firebaseio.com",
+      projectId: "flutter-6c452",
+      storageBucket: "flutter-6c452.firebasestorage.app",
+      messagingSenderId: "76508626341",
+      appId: "1:76508626341:web:3609cbb9be3692a3acbc4c",
+      measurementId: "G-LWDJ2X8PGH"
+    };
+
+    firebase.initializeApp(firebaseConfig);
+    const db = firebase.database();
+
     setTimeout(() => {
-      if (typeof firebase !== 'undefined' && firebase.database) {
-        const db = firebase.database();
-        db.ref('priceTable').on('value', (snapshot) => {
-          const data = snapshot.val() || {};
-          
-          const levels = ['ilkokul', 'ortaokul', 'lise'];
-          const types = [
-            { key: 'Online', id: 'Online' },
-            { key: 'Live', id: 'Live' }
-          ];
-          
-          levels.forEach(level => {
-            const rows = data[level] || [];
-            types.forEach(typeObj => {
-              const tableId = `about${typeObj.id}${level.charAt(0).toUpperCase() + level.slice(1)}Table`;
-              const tbody = document.getElementById(tableId);
-              if (tbody) {
-                tbody.innerHTML = '';
-                rows.forEach(row => {
-                  const tr = document.createElement('tr');
-                  const typeKey = typeObj.key === 'Online' ? 'online' : 'yuzyuze';
-                  const hourlyPrice = row[typeKey] || 0;
-                  const monthlyHours = row.hours * 4;
-                  const monthlyPrice = hourlyPrice * 4;
-                  
-                  tr.innerHTML = `
-                    <td>${row.hours} saat</td>
-                    <td>${monthlyHours} saat</td>
-                    <td class="price-cell">${monthlyPrice.toFixed(0)} TL</td>
-                  `;
-                  tbody.appendChild(tr);
-                });
-              }
-            });
+      db.ref('priceTable').on('value', (snapshot) => {
+        const data = snapshot.val() || {};
+        
+        const levels = ['ilkokul', 'ortaokul', 'lise'];
+        const types = [
+          { key: 'Online', id: 'Online' },
+          { key: 'Live', id: 'Live' }
+        ];
+        
+        levels.forEach(level => {
+          const rows = data[level] || [];
+          types.forEach(typeObj => {
+            const tableId = `about${typeObj.id}${level.charAt(0).toUpperCase() + level.slice(1)}Table`;
+            const tbody = document.getElementById(tableId);
+            if (tbody) {
+              tbody.innerHTML = '';
+              rows.forEach(row => {
+                const tr = document.createElement('tr');
+                const typeKey = typeObj.key === 'Online' ? 'online' : 'yuzyuze';
+                const hourlyPrice = row[typeKey] || 0;
+                const monthlyHours = row.hours * 4;
+                const monthlyPrice = hourlyPrice * 4;
+                
+                tr.innerHTML = `
+                  <td>${row.hours} saat</td>
+                  <td>${monthlyHours} saat</td>
+                  <td class="price-cell">${monthlyPrice.toFixed(0)} TL</td>
+                `;
+                tbody.appendChild(tr);
+              });
+            }
           });
         });
-      }
+      });
     }, 500);
     </script>
+
+</body>
+</html>
