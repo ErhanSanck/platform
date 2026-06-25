@@ -593,12 +593,46 @@ h2 {
 }
 
 /* Responsive */
+/* Responsive */
 @media (max-width: 768px) {
-    .nav-links { display: none; }
-    .menu-toggle { display: flex; }
-    .hero-section h1 { font-size: 2.5rem; }
-    .page-layout { flex-direction: column; }
-    .sidebar { width: 100%; flex-direction: row; overflow-x: auto; }
-    .logo a { font-size: 20px; }
-    .logo-handwriting { font-size: 14px; }
+    /* Logo alanını dikey düzene getirerek el yazısının alta inmesini sağladık */
+    .logo a { 
+        font-size: 18px;
+        flex-direction: column; 
+        align-items: flex-start; /* Sola hizalı düzen */
+        gap: 2px; /* İki metin arasındaki dikey boşluk */
+    }
+    
+    .logo-handwriting { 
+        font-size: 11px; /* Alt metnin boyutu */
+        margin-top: -2px;
+    }
+
+    /* Menü linklerini yan yana tutup mobilde sığacak şekilde optimize ettik */
+    .nav-links { 
+        display: flex !important;
+        gap: 10px; /* Menü elemanları arasındaki boşluğu daralttık */
+    }
+    
+    .nav-links a {
+        font-size: 13px; /* Küçük ekranlarda yan yana sığması için yazı boyutu */
+        padding: 4px 2px;
+    }
+
+    /* Hamburger menü butonunu tamamen gizliyoruz */
+    .menu-toggle { 
+        display: none !important;[cite: 1]
+    }
+    
+    /* Navbar içindeki elemanların (Logo ve Menü) ekrana dengeli dağılmasını sağladık */
+    .navbar {
+        padding: 12px 10px;
+        flex-direction: row;[cite: 1]
+        justify-content: space-between;[cite: 1]
+        align-items: center;[cite: 1]
+    }
+
+    .hero-section h1 { font-size: 2.5rem; }[cite: 1]
+    .page-layout { flex-direction: column; }[cite: 1]
+    .sidebar { width: 100%; flex-direction: row; overflow-x: auto; }[cite: 1]
 }
