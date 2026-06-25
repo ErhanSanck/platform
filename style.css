@@ -89,6 +89,42 @@ body {
     align-items: center;
     gap: 8px;
 }
+.maps-card {
+        width: 200px;           /* Kartın genişliği */
+        height: 200px;          /* Kartın yüksekliği (Kare olması için genişlikle aynı) */
+        border: 1px solid #e0e0e0; /* Hafif bir çerçeve */
+        border-radius: 12px;    /* Köşeleri yumuşatmak için */
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08); /* Kart hissi veren hafif gölge */
+        display: flex;
+        align-items: center;    /* Dikeyde tam ortalama */
+        justify-content: center;/* Yatayda tam ortalama */
+        background-color: #ffffff; /* Kartın arka plan rengi */
+        transition: transform 0.2s, box-shadow 0.2s; /* Üzerine gelince animasyon için */
+        padding: 15px;          /* İçerideki yazının kenarlara sıkışmaması için */
+        box-sizing: border-box; /* Padding'in genişliği bozmasını engeller */
+    }
+
+    /* Kartın üzerine gelindiğinde (Hover efekti) */
+    .maps-card:hover {
+        transform: translateY(-4px); /* Kartı hafif yukarı kaldırır */
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15); /* Gölgeyi derinleştirir */
+    }
+
+    .maps-link-btn {
+        text-align: center; 
+        display: flex; 
+        flex-direction: column; /* Emoji ve metni alt alta almak istersen (İsteğe bağlı) */
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        color: #333333;         /* Yazı rengi */
+        font-family: Arial, sans-serif;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 1.4;
+        width: 100%;
+        height: 100%;
+    }
 .stats-container {
     display: flex;
     justify-content: center;
