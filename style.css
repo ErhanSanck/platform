@@ -489,7 +489,53 @@ h2 {
     cursor: pointer;
     transition: all 0.3s;
 }
+/* Hizmet Kartı Buton Temel Stilleri */
+.btn-service {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 15px;
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 8px;
+    transition: all 0.2s ease-in-out;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
 
+/* Online Butonu İki Farklı Renk Seçeneği */
+/* Seçenek A: Sitenizin ana renk tonu (Mavi) */
+.btn-online {
+    background-color: #2563eb;
+    color: #ffffff !important;
+}
+
+.btn-online:hover {
+    background-color: #1d4ed8;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(37, 99, 235, 0.2);
+}
+
+/* Yüz Yüze Butonu İki Farklı Renk Seçeneği */
+/* Seçenek B: Farklılık yaratmak için alternatif ton (Zümrüt Yeşili) */
+.btn-live {
+    background-color: #059669;
+    color: #ffffff !important;
+}
+
+.btn-live:hover {
+    background-color: #047857;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(5, 150, 105, 0.2);
+}
+
+/* Kart içindeki paragrafın butonun altında kalmaması için hizalama */
+.service-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
 .submit-btn:hover {
     background: var(--secondary-color);
     transform: translateY(-2px);
