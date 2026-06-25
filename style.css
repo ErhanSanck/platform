@@ -593,46 +593,52 @@ h2 {
 }
 
 /* Responsive */
-/* Responsive */
+
 @media (max-width: 768px) {
-    /* Logo alanını dikey düzene getirerek el yazısının alta inmesini sağladık */
+    /* Navbar'ı dikey kolon düzenine getirerek logo ve menüyü alt alta sıraladık */
+    .navbar {
+        padding: 12px 10px;
+        flex-direction: column;
+        gap: 12px; /* Logo ile menü arasındaki dikey boşluk */
+        align-items: center; /* Elemanları ortala (İsteğe göre flex-start ile sola da çekilebilir) */
+    }
+
+    /* Logo alanını dikey düzende tutarak slogan metnini alta aldık */
     .logo a { 
-        font-size: 18px;
+        font-size: 20px; /* Logo boyutunu mobilde biraz daha belirgin yaptık */
         flex-direction: column; 
-        align-items: flex-start; /* Sola hizalı düzen */
-        gap: 2px; /* İki metin arasındaki dikey boşluk */
+        align-items: center; /* Ortalanmış düzen */
+        gap: 2px;
     }
     
     .logo-handwriting { 
-        font-size: 11px; /* Alt metnin boyutu */
+        font-size: 11px;
         margin-top: -2px;
     }
 
-    /* Menü linklerini yan yana tutup mobilde sığacak şekilde optimize ettik */
+    /* Menü linklerini tamamen serbest bırakıp alt satırda tek sıra yan yana dizdik */
     .nav-links { 
         display: flex !important;
-        gap: 10px; /* Menü elemanları arasındaki boşluğu daralttık */
+        flex-direction: row !important; /* Kesinlikle yan yana kalmasını sağladık */
+        justify-content: center;
+        flex-wrap: nowrap; /* Yazıların alt satıra kırılmasını engeller, tek sıra tutar */
+        gap: 14px; /* Linklerin arasındaki yatay boşluk */
+        width: 100%;
     }
     
     .nav-links a {
-        font-size: 13px; /* Küçük ekranlarda yan yana sığması için yazı boyutu */
-        padding: 4px 2px;
+        font-size: 13px; /* Tüm yazıların tek sıraya sığması için ideal yazı boyutu */
+        padding: 6px 4px;
+        white-space: nowrap; /* Kelimelerin kendi içinde bölünmesini engeller */
     }
 
-    /* Hamburger menü butonunu tamamen gizliyoruz */
+    /* Hamburger (mobil menü açma) butonunu gizliyoruz */
     .menu-toggle { 
-        display: none !important;[cite: 1]
-    }
-    
-    /* Navbar içindeki elemanların (Logo ve Menü) ekrana dengeli dağılmasını sağladık */
-    .navbar {
-        padding: 12px 10px;
-        flex-direction: row;[cite: 1]
-        justify-content: space-between;[cite: 1]
-        align-items: center;[cite: 1]
+        display: none !important;
     }
 
-    .hero-section h1 { font-size: 2.5rem; }[cite: 1]
-    .page-layout { flex-direction: column; }[cite: 1]
-    .sidebar { width: 100%; flex-direction: row; overflow-x: auto; }[cite: 1]
+    /* Diğer responsive element ayarları */
+    .hero-section h1 { font-size: 2.5rem; }
+    .page-layout { flex-direction: column; }
+    .sidebar { width: 100%; flex-direction: row; overflow-x: auto; }
 }
