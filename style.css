@@ -506,7 +506,7 @@ h2 {
 /* Online Butonu İki Farklı Renk Seçeneği */
 /* Seçenek A: Sitenizin ana renk tonu (Mavi) */
 .btn-online {
-    background-color: #2563eb;
+    background-color: #79b6c9;
     color: #ffffff !important;
 }
 
@@ -519,7 +519,7 @@ h2 {
 /* Yüz Yüze Butonu İki Farklı Renk Seçeneği */
 /* Seçenek B: Farklılık yaratmak için alternatif ton (Zümrüt Yeşili) */
 .btn-live {
-    background-color: #059669;
+    background-color: #101090 ;
     color: #ffffff !important;
 }
 
